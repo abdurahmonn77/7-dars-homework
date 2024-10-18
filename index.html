@@ -3,28 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" href="Img url here"> -->
-     <!-- <link rel="stylesheet" href="CSS file link here"> -->
-    <title>Site Title</title>
+    <link rel="icon" href="./images/site-logo.png">
+     <link rel="stylesheet" href="./css/main.css">
+     <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <title>Beautico</title>
 </head>
 <body>
     <header class="site-header">
-        <div class="container">
-            <div class="header"></div>
+        <div class="header-top relative w-360 bg-[#6244A3] py-[14px] ">
+            <div class="flex items-center justify-center gap-1">
+                <strong class="font-normal text-white leading-[21px] text-sm">Free worldwide shipping for orders over $55.</strong>
+                <a href="#" class="font-normal text-white leading-[21px] text-sm">Shop now</a>
+                <img src="./images/close.svg" alt="close" class="absolute top-0 bottom-0 my-auto right-10 cursor-pointer">
+            </div>
+        </div>
+        <div class="containers">
+            <div class="header">
+                <div class="header-down relative bg-white">
+                    <ul class="navbar-list flex items-center justify-center">
+                        <li class="flex py-6 px-4">
+                            <a href="#" class="text-[#697586] text-normal text-base leading-6">Products</a>
+                        </li>
+                        <li class="flex py-6 px-4">
+                            <a href="#" class="text-[#697586] text-normal text-base leading-6">Story</a>
+                        </li>
+                        <li class="flex py-6 px-4">
+                            <a href="#" class="text-[#697586] text-normal text-base leading-6">Blog</a>
+                        </li>
+                        <li class="flex py-6 px-4">
+                            <a href="#" class="text-[#697586] text-normal text-base leading-6">Collections</a>
+                        </li>
+                        <li class="flex py-6 px-4">
+                            <a href="#" class="text-[#697586] text-normal text-base leading-6">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="button-wrapper absolute flex items-center top-0 bottom-0 px-auto right-[-50px] gap-2">
+                        <button class="w-[100px] py-[9px] border-[#CDD5DF] border-[1px] rounded-[64px] inline-block flex items-center justify-center gap-1">
+                            <img src="images/shopping_bag.svg" alt="">
+                            <span class="text-normal text-base leading-[24px] text-center">Cart</span>
+                        </button>
+                        <button class="w-[119px] py-[9px] flex items-center justify-center rounded-[64px] bg-[#CF4D74] text-white text-normal text-base leading-[24px] text-center">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main class="site-main">
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero"></div>
+        <section class="hero-section bg-[#EDEBF7] relative py-[80px] ">
+            <div class="containers">
+                <div class="hero">
+                    <div class="hero-content w-[560px]">
+                        <h1 class="text-normal text-[56px] text-[#3C2769] leading-[67px]">Hydrated skin in 3 easy steps</h1>
+                        <p class="text-normal text-[#3C2769] text-[20px] leading-[30px] mt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique duis Cursus mi quis viverra ornare.</p>
+                        <div class="hero-button-wrapper flex gap-4 mt-[37px]">
+                            <button class="w-[143px] bg-[#CF4D74] border-[1px] rounded-[64px] flex items-center justify-center text-white py-[17px] text-[16px] text-center">
+                                Shop now
+                            </button>
+                            <button class="w-[138px] py-[17px] flex items-center justify-center border-[1px] border-[#202939] bg-white rounded-[64px]">
+                                Our story
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-footer mt-[209px]">
+                        <p class="text-[#3C2769] text-[14px] leading-[21px] text-normal">Trusted by the world's best companies</p>
+                        <ul class="hero-footer-list flex items-center gap-8 mt-6">
+                            <li>
+                                <img src="images/Frame.svg" alt="frame" class="cursor-pointer">
+                            </li>
+                            <li>
+                                <img src="images/Frame.svg" alt="frame" class="cursor-pointer">
+                            </li>
+                            <li>
+                                <img src="images/Frame.svg" alt="frame" class="cursor-pointer">
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="img-wrapper absolute right-0 top-0">
+                        <img src="images/hero-png.png" alt="">
+                    </div>
+                </div>
             </div>
         </section>
         <!-- section -->
     </main>
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer"></div>
-        </div>
-    </footer>
 </body>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </html>
