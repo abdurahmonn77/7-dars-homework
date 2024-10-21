@@ -12,3 +12,53 @@
   margin: 0 auto;
   padding: 0 20px;
 }/*# sourceMappingURL=main.css.map */
+
+@media (max-width: 768px) {
+    .navbar-list {
+      margin-right: 110px;
+    }
+    .header-item {
+      padding-left: 12px;
+    }
+    .button-wrapper {
+      margin-right: 10px;
+    }
+    .img-wrapper {
+      display: none;
+    }
+    .hero-footer {
+      margin-top: 70px;
+      width: 768px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-content {
+      padding-right: 30px;
+      max-width: 768px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-content h1 {
+      width: 500px;
+      text-align: center;
+    }
+    .hero-content p {
+      text-align: center;
+    }
+    .section-2 {
+      margin-top: 0;
+    }
+    .abt-card-wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .card button {
+      width: 200px;
+    }
+    .card-left {
+      width: 600px;
+      margin: 0 auto;
+    }
+}
